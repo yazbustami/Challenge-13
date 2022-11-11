@@ -56,7 +56,7 @@ router.put('/:id', (req, res) => {
       res.status(404).json({ message: "NOT FOUND."});
       return;
     }
-    res.json({ message: "Tag Updated."});
+    res.json({ message: "TAG UPDATED."});
   })
   .catch(err => {
     res.status(500).json(err);
@@ -73,7 +73,7 @@ router.delete('/:id', (req, res) => {
       res.status(404).json({ message: "NOT FOUND." });
       return;
     }
-    res.json({ message: "Tag Deleted."});
+    res.json({ message: "TAG DELETED."});
   })
   .catch(err => {
     res.status(500).json(err);
